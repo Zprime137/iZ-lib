@@ -5,9 +5,6 @@ A high-performance C library for prime generation tasks. It introduces a suite o
 [![CMake](https://img.shields.io/badge/CMake-4%2B-blue.svg)](https://cmake.org/)
 [![GCC](https://img.shields.io/badge/GCC-15%2B-red.svg)](https://gcc.gnu.org/)
 [![Clang](https://img.shields.io/badge/Clang-17%2B-orange.svg)](https://clang.llvm.org/)
-[![GMP](https://img.shields.io/badge/GMP-6.2.1-red.svg)](https://gmplib.org/)
-[![OpenSSL](https://img.shields.io/badge/OpenSSL-3.0.7-orange.svg)](https://www.openssl.org/)
-[![License](https://img.shields.io/github/license/Zprime137/iZ-library)](https://github.com/Zprime137/iZ-library/blob/main/LICENSE)
 
 ## Table of Contents
 
