@@ -17,7 +17,7 @@ int main(void)
     // Print the first 10 primes
     for (int i = 0; i < 10; i++)
     {
-        printf("%d ", primes->p_array[i]);
+        printf("%llu ", primes->p_array[i]);
     }
     printf("\n");
 
@@ -29,7 +29,7 @@ int main(void)
     mpz_t prime;
     mpz_init(prime);
 
-    random_prime_gen(prime, bit_size); // Generate a random prime number
+    random_iZprime(prime, -1, bit_size, 2); // Generate a random prime number
     // Print the generated prime number
     printf("Random prime: ");
     mpz_out_str(stdout, 10, prime);

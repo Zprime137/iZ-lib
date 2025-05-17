@@ -1,4 +1,8 @@
-// iZ.c
+/**
+ * @file iZ.c
+ * @brief This file contains the implementation of the iZ library utility functions and subroutines.
+ *
+ */
 
 #include <iZ.h>
 
@@ -251,8 +255,6 @@ void compute_max_vx_gmp(mpz_t vx, int bit_size)
     }
 
     mpz_div_ui(vx, vx, primes->p_array[i]); // divide by the last prime
-    // print last prime
-    printf("Last prime: %zu\n", primes->p_array[i - 1]);
 }
 
 void construct_vx2(BITMAP *x5, BITMAP *x7)
