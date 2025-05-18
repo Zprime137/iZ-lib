@@ -191,6 +191,7 @@ int main() {
 
 ```c
 #include "iZ.h"         // Main library API, it includes all dependencies and necessary headers
+
 int main() {
     int vx6 = 5 * 7 * 11 * 13 * 17 * 19; // Define the segment size as a product of small primes (greater than 3)
     char *y = "10"; // Define the starting y value for the VX segment
