@@ -32,7 +32,7 @@ The iZ-Library is a comprehensive package of efficient prime generation algorith
 
 ### Classic Sieve-iZ Algorithm
 
-A simple yet effective method that focuses on numbers of the form $6x \pm 1$ (the iZ set), reducing the search space from $n$ to $\frac{n}{3}$, thereby avoiding a large portion of the redundancies that arise from considering all numbers. The approach reduces the composite-marking complexity from
+A simple yet effective method that focuses on numbers of the form $6x \pm 1$ (the iZ set), reducing the search space from $n$ to $\frac{n}{3}$, thereby avoiding a large portion of the redundancies that arise from considering all numbers. The approach reduces the composite-marking complexity from the traditional
 
 $$n \sum^{\sqrt{n}}_{p=2} \frac{1}{p}$$
 
