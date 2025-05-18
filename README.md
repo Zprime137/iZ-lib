@@ -33,19 +33,25 @@ The iZ-Library is a comprehensive package of efficient prime generation algorith
 ### Classic Sieve-iZ Algorithm
 
 A simple yet effective method that focuses on numbers of the form $6x \pm 1$ (the iZ set), reducing the search space from $n$ to $\frac{n}{3}$, thereby avoiding a large portion of the redundancies that arise from considering all numbers. The approach reduces the composite-marking complexity from
+
 $$n \sum^{\sqrt{n}}_{p=2} \frac{1}{p} \quad \text{to} \quad \frac{n}{3} \sum^{\sqrt{n}}_{p=5} \frac{1}{p}$$
+
 translating to an asymptotic bit complexity of $O(n \log \log n)$ but with a considerably lower constant factor ($\frac{n}{3}$ instead of $n$).
 
 ### Segmented Sieve-iZm Algorithm
 
 By arranging the iZ set into 2D structures called the iZ-Matrix (iZm), this algorithm decouples the memory footprint from $n$, achieving constant auxiliary space $O(1)$ (requiring as little as 0.8 MB). Furthermore, it skips marking composites for small primes (below 23), further reducing the bit complexity to
+
 $$\frac{n}{3} \sum^{\sqrt{n}}_{p=23} \frac{1}{p}.$$
 
 ### Sieve-VX Algorithm
 
 A more practical tool for targeting very large ranges with efficiency. This algorithm combines deterministic and probabilistic sieving; it processes the iZ-Matrix structure with a standardized vector sizes $vx$ defined as the product of the first iZ-primes. For instance, the vector size $vx6$ is defined as:
+
 $$vx6 = 5 \times 7 \times 11 \times 13 \times 17 \times 19 = 1,616,615 \text{\ bits} \approx 0.2 \text{\ MB},$$
+
 spanning a numerical interval
+
 $$S = 6 \times vx6 = 9,699,690.$$
 
 **• Complexity:**
