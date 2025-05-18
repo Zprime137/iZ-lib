@@ -34,13 +34,7 @@ The iZ-Library is a comprehensive package of efficient prime generation algorith
 
 A simple yet effective method that focuses on numbers of the form $6x \pm 1$ (the iZ set), reducing the search space from $n$ to $\frac{n}{3}$, thereby avoiding a large portion of the redundancies that arise from considering all numbers. The approach reduces the composite-marking complexity from
 
-$n \sum^{\sqrt{n}}_{p=2} \frac{1}{p} $
-to
-$n \sum^{\sqrt{n}}_{p=5} \frac{1}{p},$
-
-<!-- n \sum^{\sqrt{n}}_{p=2} \§frac{1}{p} \right \frac{n}{3} \sum^{\sqrt{n}}_{p=5} \frac{1}{p}, -->
-
-<!-- $$n \sum^{\sqrt{n}}_{p=2} \frac{1}{p} \quad \text{to} \quad \frac{n}{3} \sum^{\sqrt{n}}_{p=5} \frac{1}{p},$$ -->
+$$n \sum^{\sqrt{n}}_{p=2} \frac{1}{p} \quad \text{to} \quad \frac{n}{3} \sum^{\sqrt{n}}_{p=5} \frac{1}{p},$$
 
 translating to an asymptotic bit complexity of $O(n \log \log n)$ but with a considerably lower constant factor ($\frac{n}{3}$ instead of $n$).
 
