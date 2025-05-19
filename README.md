@@ -137,7 +137,7 @@ To execute the tests in _test/test_all.c_, run:
 make test
 ```
 
-The test module include high-level test units for ensuring the correctness of the library's functionality:
+The test module includes high-level test units for ensuring the correctness of the library's functionality:
 
 - `testing_sieve_integrity`: This test invokes the implemented sieve algorithms and compares pass if all algorithms return the same prime list.
 
